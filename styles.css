@@ -81,6 +81,7 @@ header {
 	grid-template-columns: 2fr 1fr;
 	padding: 10px 50px;
 	align-items: center;
+	box-shadow: 0 3px 20px lightgrey;
 }
 
 .profile {
