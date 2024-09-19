@@ -97,9 +97,11 @@ header {
 .profile p {
 	margin: 0;
 }
-.profile img {
-	width: 48px;
+.profilepic {
 	border-radius: 50%;
+}
+.small {
+	width: 48px;
 }
 
 .search {
