@@ -9,6 +9,7 @@
 }
 body {
 	margin: 0;
+	background-color: #e2e8f0;
 }
 
 .content {
@@ -30,6 +31,8 @@ body {
 
 .sidebar svg {
 	fill: white;
+}
+svg {
 	width: 1.2em;
 }
 
@@ -67,4 +70,49 @@ body {
 .menu li {
 	display: flex;
 	align-items: center;
+}
+
+header {
+	background-color: white;
+	grid-column: 2;
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	max-height: 100%;
+}
+.topbar {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	padding: 10px 50px;
+	align-items: center;
+}
+
+.profile {
+	font-size: 1.25rem;
+	font-weight: bold;
+	grid-column: 2;
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+.profile p {
+	margin: 0;
+}
+.profile img {
+	width: 48px;
+	border-radius: 50%;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.search > * {
+	font-size: 1.25rem;
+}
+.search input {
+	width: 75%;
+	border: 0;
+	border-radius: 20px;
+	background-color: #e2e8f0;
 }
