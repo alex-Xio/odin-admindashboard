@@ -95,11 +95,17 @@ header {
 .profile p {
 	margin: 0;
 }
+.profile svg {
+	margin-left: 20px;
+}
 .profilepic {
 	border-radius: 50%;
 }
 .small {
 	width: 48px;
+}
+.big {
+	width: 82px;
 }
 
 .search {
@@ -115,4 +121,35 @@ header {
 	border: 0;
 	border-radius: 20px;
 	background-color: #e2e8f0;
+}
+
+.greeter {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	gap: 24px;
+}
+.hello {
+	margin: 0;
+}
+.name {
+	margin-top: 8px;
+	margin-bottom: 0;
+	font-size: 1.5rem;
+}
+.actions {
+	grid-column: 2;
+	grid-row: 2;
+	display: flex;
+	justify-content: space-between;
+}
+
+.actions button {
+	width: 30%;
+	min-height: 36px;
+	border-radius: 20px;
+	border: 0;
+	font-weight: bold;
+	color: white;
+	background-color: #1992d4;
 }
