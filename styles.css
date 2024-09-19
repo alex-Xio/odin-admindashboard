@@ -13,14 +13,14 @@ body {
 }
 
 .content {
-	max-height: 100vh;
+	height: 100vh;
 	display: grid;
 	grid-template-rows: 1fr 4fr;
 	grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
-	height: 100vh;
+	height: 100%;
 	grid-row: 1 / 3;
 	background-color: #1992d4;
 	padding-top: 30px;
@@ -170,6 +170,8 @@ header {
 .title {
 	font-size: 1.25rem;
 	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 8px;
 }
 .projects {
 	display: grid;
@@ -222,4 +224,39 @@ header {
 hr {
 	margin: 16px 0;
 	border: 1px solid lightgrey;
+}
+
+.trending {
+	background-color: white;
+	border-radius: 10px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.user {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	gap: 16px;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.user:first-child {
+	margin-top: 0;
+}
+.user:last-child {
+	margin-bottom: 0;
+}
+.user p {
+	margin: 0;
+}
+.user img {
+	justify-self: end;
+}
+.userdescription > p:last-child {
+	color: grey;
+	font-size: 0.9rem;
 }
